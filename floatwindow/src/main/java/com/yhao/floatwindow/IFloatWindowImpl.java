@@ -219,13 +219,13 @@ public class IFloatWindowImpl extends IFloatWindow {
                                     }
 
                                     //左侧
-                                    if (newX < -v.getWidth()/2) {
-                                        newX = -v.getWidth()/2;
+                                    if (newX < 0) {
+                                        newX = 0;
                                     }
 
                                     //上侧
-                                    if (newY < -v.getHeight()/2) {
-                                        newY = -v.getHeight()/2;
+                                    if (newY < 0) {
+                                        newY = 0;
                                     }
                                 }
                                 mFloatView.updateXY(newX, newY);
