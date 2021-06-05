@@ -208,22 +208,18 @@ public class IFloatWindowImpl extends IFloatWindow {
                                 newX = (int) (mFloatView.getX() + changeX);
                                 newY = (int) (mFloatView.getY() + changeY);
                                 if (mB.mMoveType == MoveType.active) {
-                                    // 右侧
                                     if (newX + v.getWidth() > Util.getScreenWidth(mB.mApplicationContext)) {
                                         newX = Util.getScreenWidth(mB.mApplicationContext)-v.getWidth() ;
                                     }
 
-                                    //下方
                                     if (newY + v.getHeight() > Util.getScreenHeight(mB.mApplicationContext)) {
                                         newY = Util.getScreenHeight(mB.mApplicationContext)-v.getHeight();
                                     }
 
-                                    //左侧
                                     if (newX < 0) {
                                         newX = 0;
                                     }
 
-                                    //上侧
                                     if (newY < 0) {
                                         newY = 0;
                                     }
